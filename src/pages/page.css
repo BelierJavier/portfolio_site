@@ -1,9 +1,9 @@
-.App {
+.page {
   text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
+.page-header {
+  background-color: #202431;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
