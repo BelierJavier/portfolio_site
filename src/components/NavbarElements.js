@@ -14,6 +14,8 @@ export const Nav = styled.nav`
 
 export const NavLink = styled(Link)`
     color: #afafaf;
+    transition: all .2s ease-in;
+    opacity: .3;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -21,7 +23,11 @@ export const NavLink = styled(Link)`
     height: 100%;
     cursor: pointer;
     &.active {
-	    color: #0098ff;
+        color: aquamarine;
+        opacity: 1;
+    }
+    &:hover {
+        opacity: 1;
     }
 `;
 
