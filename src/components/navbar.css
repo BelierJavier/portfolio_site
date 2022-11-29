@@ -1,28 +1,29 @@
 @keyframes text-clip {
   0% {clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%); opacity: 1;}
-  10% {clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);}
-  35% {clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+  15% {clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);}
   65% {clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
   100% {clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%); opacity: 1;}
 }
 
-@keyframes reveal-slide {
-  0% {clip-path: polygon(0 0, 0 100%, 0 0, 0 100%); color: aquamarine;}
-  25% {clip-path: polygon(0 0, 0 100%, 0 0, 0 100%);}
-  80% {clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0); color: aquamarine;}
-  88% {color: aquamarine;}
-  100% {clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0); color: white;}
+@keyframes slide-left {
+  0% {transform: translateX(-200px);}
+  40% {transform: translateX(-200px);}
+  70% {transform: translateX(0); }
+  100% {color: white;}
 }
 
-.logo {
-  animation: reveal-slide 4s linear;
-  font-family: LEMON MILK;
-  font-size: 16px;
+.logo-box {
+  overflow: hidden;
   display: flex;
   align-items: center;
   margin: auto;
   height: 100%;
-  overflow: hidden;
+}
+
+.logo {
+  animation: slide-left 4s;
+  font-family: LEMON MILK;
+  font-size: 16px;
 }
 
 .i {

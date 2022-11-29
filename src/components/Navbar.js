@@ -4,6 +4,8 @@ import { Flex, Box} from 'rebass';
 import { Nav, NavLink, NavMenu } from "./NavbarElements";
 
 const Navbar = () => {
+
+
   
   return (
     <>
@@ -20,7 +22,9 @@ const Navbar = () => {
           color='white'
           bg='primary'>
             <div className="i">I</div>
-            <p className='logo'>Prodigy Alpha</p>
+            <div className="logo-box">
+              <p className='logo'>Prodigy Alpha</p>
+            </div>
           </Box>
 
           <Box
@@ -37,7 +41,7 @@ const Navbar = () => {
           bg='primary'>
             <Nav>
               <NavMenu>
-                <NavLink to="/home" activeStyle> 
+                <NavLink to="/" exact activeStyle> 
                   HOME
                 </NavLink>
                 <NavLink to="/about" activeStyle>

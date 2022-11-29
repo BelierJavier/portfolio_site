@@ -12,17 +12,20 @@ import Contact from './pages/contact';
 function App() {
 
 return (
+
+  <div className="App">
     
       <Router>
         <Navbar />
         <Routes>
-          <Route exact path='/home' element={<Home />} />
+          <Route exact path='/' element={<Home />} />
           <Route path='/about' element={<About/>} />
           <Route path='/projects' element={<Projects/>} />
           <Route path='/contact' element={<Contact/>} />
         </Routes>
       </Router>
   
+  </div>
 
 );
 }
