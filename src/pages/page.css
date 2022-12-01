@@ -52,9 +52,14 @@
   font-family: Alexandria;
   font-weight: lighter;
   color: lightgray;
-  font-size: x-large;
+  font-size: 24px;
   letter-spacing: 2px;
   text-align: left;
+}
+
+.home-buttons {
+
+  
 }
 
 .wave {

@@ -1,6 +1,11 @@
 import React from "react";
 import './page.css';
 import { Flex, Box} from 'rebass';
+import styled from "styled-components";
+
+const ButtonGroup = styled.div`
+  display: flex;
+`
 
 const Home = () => {
 return (
@@ -25,7 +30,7 @@ return (
                     </div>
                     <div className="content-box">
                         <p className="text">
-                            I'm a software developer who enjoys building websites and mobile 
+                            Software developer who enjoys building websites and mobile 
                             apps for independent clients, small, and medium sized businesses. 
                             If you're an individual or growing company trying to establish 
                             your brand on the internet, from online blogs and portfolios to 
@@ -33,6 +38,10 @@ return (
                             the next level.
                         </p>
                     </div>
+                    <ButtonGroup>
+                        <button className="button-28"> Contact </button>
+                        <button className="button-28"> Download CVV </button>
+                    </ButtonGroup>
                 </div>
 	        </div>
 
@@ -45,9 +54,7 @@ return (
 
         <div className="page">
             <div className="page-header">
-                <div className="content-box">
-                    
-                </div>
+                <img src="Official_Profile_Cutout2.png" alt="profile"/>
             </div>
         </div>
 
