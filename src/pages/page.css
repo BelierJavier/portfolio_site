@@ -57,9 +57,114 @@
   text-align: left;
 }
 
-.home-buttons {
+.home-button1 {
+  animation: fade 6s;
+  cursor: pointer;
+  outline: 0;
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 150px;
+  text-align: center;
+  background-color: black;
+  border: 1px solid transparent;
+  padding: 6px 35px;
+  border-radius: 1.5rem;
+  color: white;
+  border-color: black;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
 
-  
+}
+
+.home-button1.effect {
+  transition: all 0.2s linear 0s;
+
+}
+
+.home-button1.effect:before {
+  content: "→";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 10px;
+  top: 0;
+  opacity: 0;
+  height: 100%;
+  width: 50px;
+  transition: all 0.2s linear 0s;
+
+}
+
+.home-button1.effect:hover {
+  text-indent: -10px;
+  background-color: transparent;
+  color: orange;
+  border-color: orange;
+
+}
+
+.home-button1.effect:hover::before {
+  opacity: 1;
+  text-indent: 0px;
+
+}
+
+.home-button2 {
+  animation: fade 6s;
+  cursor: pointer;
+  outline: 0;
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  width: 200px;
+  text-align: center;
+  background-color: black;
+  border: 1px solid transparent;
+  padding: 6px 35px;
+  margin-right: 10px;
+  border-radius: 1.5rem;
+  color: white;
+  border-color: black;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.home-button2.effect {
+  transition: all 0.2s linear 0s;
+
+}
+
+.home-button2.effect:before {
+  content: "↓";
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 10px;
+  top: 0;
+  opacity: 0;
+  height: 90%;
+  width: 50px;
+  transition: all 0.2s linear 0s;
+
+}
+
+.home-button2.effect:hover {
+  text-indent: 10px;
+  background-color: transparent;
+  color: aquamarine;
+  border-color: aquamarine;
+}
+
+.home-button2.effect:hover::before {
+  opacity: 1;
+  text-indent: 0px;
+
 }
 
 .wave {

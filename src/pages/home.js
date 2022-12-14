@@ -30,7 +30,7 @@ return (
                     </div>
                     <div className="content-box">
                         <p className="text">
-                            Software developer who enjoys building websites and mobile 
+                            Passionate software developer who enjoys building websites and mobile 
                             apps for independent clients, small, and medium sized businesses. 
                             If you're an individual or growing company trying to establish 
                             your brand on the internet, from online blogs and portfolios to 
@@ -39,8 +39,8 @@ return (
                         </p>
                     </div>
                     <ButtonGroup>
-                        <button className="button-28"> Contact </button>
-                        <button className="button-28"> Download CVV </button>
+                        <button className="home-button2 effect" href="BelierJ_Resume.pdf" download="Resume"> Download CVV </button>
+                        <button className="home-button1 effect"> Contact </button>
                     </ButtonGroup>
                 </div>
 	        </div>
