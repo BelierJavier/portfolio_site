@@ -43,8 +43,18 @@
 .title {
   animation: slide-up 2s;
   font-family: Helvetica;
+  font-size: 3.4rem;
   color: white;
   text-align: left;
+}
+
+.wave {
+  animation-name: wave-animation; 
+  animation-duration: 2.5s;   
+  animation-delay: 4s;      
+  animation-iteration-count: 1;  
+  transform-origin: 70% 70%;       
+  display: inline-block;
 }
 
 .text {
@@ -66,12 +76,12 @@
   line-height: 1.5;
   width: 150px;
   text-align: center;
-  background-color: black;
+  background-color: white;
   border: 1px solid transparent;
   padding: 6px 35px;
   border-radius: 1.5rem;
-  color: white;
-  border-color: black;
+  color: #202431;
+  border-color: white;
   display: inline-block;
   position: relative;
   overflow: hidden;
@@ -101,8 +111,8 @@
 .home-button1.effect:hover {
   text-indent: -10px;
   background-color: transparent;
-  color: orange;
-  border-color: orange;
+  color: aquamarine;
+  border-color: aquamarine;
 
 }
 
@@ -166,15 +176,3 @@
   text-indent: 0px;
 
 }
-
-.wave {
-  animation-name: wave-animation; 
-  animation-duration: 2.5s;   
-  animation-delay: 4s;      
-  animation-iteration-count: 1;  
-  transform-origin: 70% 70%;       
-  display: inline-block;
-}
-
-
-

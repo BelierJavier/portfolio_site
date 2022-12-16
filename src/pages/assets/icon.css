@@ -1,0 +1,89 @@
+.smicon {
+    animation: fade 6s;
+    cursor: pointer;
+    outline: 0;
+    line-height: 1.5;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    margin-right: 40px;
+    margin-top: 30px;
+    border-radius: 1.5rem;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 30px;
+    width: 30px;
+  
+}
+  
+.smicon.ig {
+    background-image: url("/public/Instagram.png");
+    transition: all 0.2s linear 0s;
+    background-color: #4c68d7;
+    border-color: #4c68d7;
+    background-size: 60%;
+}
+.smicon.ig:hover {
+    background-color: transparent;
+    color: aquamarine;
+    border-color: aquamarine;
+}
+  
+
+
+.smicon.li {
+    background-image: url("/public/Linkedin.png");
+    transition: all 0.2s linear 0s;
+    background-color: #0072b1;
+    border-color: #0072b1;
+    background-size: 60%;
+}
+.smicon.li:hover {
+    background-color: transparent;
+    color: aquamarine;
+    border-color: aquamarine;
+}
+  
+
+
+.smicon.gh {
+    background-image: url("/public/Github.png");
+    transition: all 0.2s linear 0s;  
+    background-color: #6e5494;
+    border-color: #6e5494;
+    background-size: 60%;
+}
+.smicon.gh:hover {
+    background-color: transparent;
+    color: aquamarine;
+    border-color: aquamarine;
+}
+
+
+
+.smicon.uw {
+    background-image: url("/public/Upwork.png");
+    transition: all 0.2s linear 0s; 
+    background-color: #17a700;
+    border-color: #17a700;
+    background-size: 70%;
+}
+.smicon.uw:hover {
+    background-color: transparent;
+    color: aquamarine;
+    border-color: aquamarine;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
