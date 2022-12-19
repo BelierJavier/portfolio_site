@@ -1,6 +1,6 @@
 import React from "react";
-import './assets/page.css';
-import './assets/icon.css';
+import './assets/page.scss';
+import './assets/icon.scss';
 import Resume from'./assets/BelierJ_Resume.pdf'
 import { Flex, Box} from 'rebass';
 import styled from "styled-components";
