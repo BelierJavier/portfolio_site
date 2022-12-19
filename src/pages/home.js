@@ -2,7 +2,7 @@ import React from "react";
 import './assets/page.scss';
 import './assets/icon.scss';
 import Resume from'./assets/BelierJ_Resume.pdf'
-import { Flex, Box} from 'rebass';
+import { Flex, Box } from 'rebass';
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 

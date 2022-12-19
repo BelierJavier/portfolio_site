@@ -1,0 +1,39 @@
+@keyframes text-clip {
+    0% {clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%); opacity: 1;}
+    15% {clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);}
+    65% {clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);}
+    100% {clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%); opacity: 1;}
+  }
+  
+  @keyframes slide-left {
+    0% {transform: translateX(-200px);}
+    40% {transform: translateX(-200px);}
+    70% {transform: translateX(0); }
+    100% {color: white;}
+  }
+  
+  .logo-box {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+  }
+  
+  .logo {
+    animation: slide-left 4s;
+    font-family: LEMON MILK;
+    font-size: 16px;
+  }
+  
+  .i {
+    animation: text-clip 4s;
+    color: aquamarine;
+    font-family: LEMON MILK;
+    font-size: 20px;
+    display: flex;
+    margin-top: 17px;
+    margin-left: -10px;
+    position: absolute;
+    opacity: 0;
+  }

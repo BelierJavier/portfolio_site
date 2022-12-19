@@ -1,5 +1,5 @@
 import React from 'react';
-import './navbar.css';
+import './navbar.scss';
 import { Flex, Box} from 'rebass';
 import { Nav, NavLink, NavMenu } from "./NavbarElements";
 
