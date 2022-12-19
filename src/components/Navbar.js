@@ -41,16 +41,16 @@ const Navbar = () => {
           bg='primary'>
             <Nav>
               <NavMenu>
-                <NavLink to="/" exact activeStyle> 
+                <NavLink to="/" exact="true"> 
                   HOME
                 </NavLink>
-                <NavLink to="/about" activeStyle>
+                <NavLink to="/about">
                   ABOUT
                 </NavLink>
-                <NavLink to="/projects" activeStyle>
+                <NavLink to="/projects">
                   PROJECTS
                 </NavLink>
-                <NavLink to="/contact" activeStyle>
+                <NavLink to="/contact">
                   CONTACT
                 </NavLink>
               </NavMenu>

@@ -28,16 +28,50 @@
   font-size: calc(10px + 2vmin);
   flex-direction: column;
   justify-content: center;
-  
+
 }
 
 .content-box {
   overflow: hidden;
 }
 
-.image-auto {
-  max-width:100%;
-  max-height:100%;
+.profile {
+  transform:
+    perspective(750px)
+    translate3d(0px, 0px, -250px)
+    rotateX(10deg)
+    rotateY(-15deg)
+    scale(1);
+  transition: 0.4s ease-in-out transform;
+
+}
+
+.profile:hover {
+  transform: 
+    translate3d(0px, 0px, -250px)
+  
+}
+
+.floater {
+  transform: 
+      perspective(800px) 
+      rotateY(20deg) 
+      rotateX(10deg)
+      translateY(20px)
+      scale(0.9) ;
+  opacity: 1;
+  transition: 0.6s ease all;
+
+}
+
+.floater:hover {
+  transform:
+      perspective(800px)
+      rotateY(10deg)
+      rotateX(0deg)
+      translateY(0)
+      scale(1);
+  opacity: 1;
 }
 
 .title {
