@@ -12,8 +12,6 @@ const ButtonGroup = styled.div`
 
 const Contact = () => {
 
-const navigate = useNavigate();
-
 return (
     <Flex>
         <Box
@@ -23,85 +21,69 @@ return (
         bg='primary'/>
         <Box
         p={3}
-        width={1/2}
+        width={1}
         color='white'
         bg='primary'>
 
             <div className="page">
+				<h1 className="title">Reach out!</h1>
                 <div className="page-header">
                     <div className="form">
-                        <div className="content-box">
-	                        <h1 className="title">
-		                        Hey <span className="wave">👋🏽</span> , I'm Belly.
-	                        </h1>
-                        </div>
-                        <div className="content-box">
-                            <p className="text">
-                                Passionate software developer who enjoys building websites and mobile 
-                                apps for independent clients, small, and medium sized businesses. 
-                                If you're an individual or growing company trying to establish 
-                                your brand on the internet, from online blogs and portfolios to 
-                                virtual stores, It'll be my pleasure to bring your services to 
-                                the next level.
-                            </p>
-                        </div>
-                        <ButtonGroup>
+                    <Flex>
+						<Box
+        					p={3}
+       						width={1/2}
+        					color='black'
+        					bg='primary'>
+							
+                        <form>
+							<Flex>
+								<Box
+        							p={3}
+       								width={1/2}
+        							bg='primary'
+									paddingLeft={0}>
 
-                            <button className="home-button2 effect"> Download CVV </button>
-                            <button className="home-button1 effect" onClick={() => navigate("/contact")}> Contact </button>
+						    		<label for="name" className="contact-label">YOUR NAME</label>
+									<input className="contact-input"></input>
 
-                        </ButtonGroup>
-                        <ButtonGroup>
-                        
-                            <button className="smicon gh" onClick={() => window.open("http://github.com/BelierJavier")}></button>
-                            <button className="smicon ig" onClick={() => window.open("https://www.instagram.com/prodigy.alpha")}></button>
-                            <button className="smicon li" onClick={() => window.open("https://www.linkedin.com/in/belier-javier-7616401b6/")}></button>
-                            <button className="smicon uw" onClick={() => window.open("https://www.upwork.com/freelancers/~017604c150247caa9f")}></button>
+								</Box>
+								<Box
+        							p={3}
+       								width={1/2}
+        							bg='primary'
+									paddingRight={0}>
 
-                        </ButtonGroup>
-                    </div>
-                </div>
-	        </div>
+									<label for="email" className="contact-label">YOUR EMAIL</label>
+									<input className="contact-input"></input>
 
-        </Box>
-        <Box
-        p={3}
-        width={1/2}
-        color='white'
-        bg='primary'>
- 
-        <div className="page">
-                <div className="page-header">
-                    <div className="floater" id="float">
-                        <div className="content-box">
-	                        <h1 className="title">
-		                        Hey <span className="wave">👋🏽</span> , I'm Belly.
-	                        </h1>
-                        </div>
-                        <div className="content-box">
-                            <p className="text">
-                                Passionate software developer who enjoys building websites and mobile 
-                                apps for independent clients, small, and medium sized businesses. 
-                                If you're an individual or growing company trying to establish 
-                                your brand on the internet, from online blogs and portfolios to 
-                                virtual stores, It'll be my pleasure to bring your services to 
-                                the next level.
-                            </p>
-                        </div>
-                        <ButtonGroup>
+								</Box>
+							</Flex>
+							<label for="message" className="contact-label">MESSAGE</label>
+							<textarea className="contact-input" cols="40" rows="5"></textarea>
+							<input className="contact-submit" type="submit" value="Submit"></input>
+						</form>
+     
+						</Box>
+						<Box
+        					p={3}
+       						width={1/2}
+        					color='white'
+        					bg='primary'>
 
-                            <button className="home-button2 effect"> Download CVV </button>
-                            <button className="home-button1 effect" onClick={() => navigate("/contact")}> Contact </button>
+							<div className="content-box">
+                            	<p className="form-text">
+                                	Passionate software developer who enjoys building websites and mobile 
+                                	apps for independent clients, small, and medium sized businesses. 
+                                	If you're an individual or growing company trying to establish 
+                                	your brand on the internet, from online blogs and portfolios to 
+                                	virtual stores, It'll be my pleasure to bring your services to 
+                                	the next level.
+                            	</p>
+                        	</div>
 
-                        </ButtonGroup>
-                        <ButtonGroup>
-                        
-                            <button className="smicon gh" onClick={() => window.open("http://github.com/BelierJavier")}></button>
-                            <button className="smicon ig" onClick={() => window.open("https://www.instagram.com/prodigy.alpha")}></button>
-                            <button className="smicon li" onClick={() => window.open("https://www.linkedin.com/in/belier-javier-7616401b6/")}></button>
-                            <button className="smicon uw" onClick={() => window.open("https://www.upwork.com/freelancers/~017604c150247caa9f")}></button>
-
-                        </ButtonGroup>
+						</Box>
+					</Flex>
                     </div>
                 </div>
 	        </div>

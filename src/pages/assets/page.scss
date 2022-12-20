@@ -56,13 +56,11 @@
 
     transform: 
     perspective(800px) 
-    rotateY(20deg) 
-    rotateX(10deg)
     translateY(20px)
     scale(0.9) ;
     opacity: 1;
     transition: 0.6s ease all;
-    background-color: gray;
+    background-color: white;
     padding: 6px 35px;
     border: 1px;
     border-radius: 1.5rem;
@@ -76,13 +74,47 @@
     &:hover {
         transform:
             perspective(800px)
-            rotateY(10deg)
-            rotateX(0deg)
+        
             translateY(0)
             scale(1);
         opacity: 1;
-}
+    }
+
+  }
+
+  .form-side {
+
+    transform: 
+    perspective(800px) 
+    rotateY(-20deg) 
+    translateY(20px)
+    scale(0.9) ;
+    opacity: 1;
+    transition: 0.6s ease all;
+    padding: 6px 35px;
+    border: 1px;
+    border-radius: 1.5rem;
+
+    &:hover {
+        transform:
+            perspective(800px)
+            rotateY(-10deg)
+            translateY(0)
+            scale(1);
+        opacity: 1;
+
+    }
   
+  }
+
+  .form-text {
+    animation: fade 6s;
+    font-family: Alexandria;
+    font-weight: lighter;
+    color: black;
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-align: left;
   }
   
   .floater {
@@ -106,6 +138,37 @@
     }
   
   }
+
+  .contact-label {
+    animation: slide-up 2s;
+    font-family: 'LEMON MILK';
+    font-size: .8rem;
+    color: black;
+    float: left;
+  }
+ 
+  .contact-input {
+        font-family: Helvetica;
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+  }
+
+  .contact-submit {
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
   
   .title {
     animation: slide-up 2s;
@@ -242,6 +305,10 @@
           }
       }
   
+  }
+
+  textarea {
+    resize: none;
   }
   
   
