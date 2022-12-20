@@ -29,7 +29,7 @@ return (
 
             <div className="page">
                 <div className="page-header">
-                    <div className="floater">
+                    <div className="form">
                         <div className="content-box">
 	                        <h1 className="title">
 		                        Hey <span className="wave">👋🏽</span> , I'm Belly.
