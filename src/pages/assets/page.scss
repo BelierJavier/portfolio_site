@@ -20,6 +20,18 @@
     60% { transform: rotate( 0.0deg) }  
     100% { transform: rotate( 0.0deg) }
   }
+
+  @keyframes flip-up {
+    0% { transform:
+            perspective(900px)
+            rotateX(60deg)
+            scale(0.7);
+          box-shadow: 0px 20px 100px rgba(0, 0, 0, 0.03); }  
+    100% { transform: 
+                perspective(800px) 
+                translateY(20px)
+                scale(1) }
+  }
   
   
   .page-header {
@@ -53,11 +65,13 @@
   }
 
   .form {
+    
+    animation: flip-up 1s;
 
     transform: 
     perspective(800px) 
     translateY(20px)
-    scale(0.9) ;
+    scale(1) ;
     opacity: 1;
     transition: 0.6s ease all;
     background-color: white;
@@ -74,9 +88,7 @@
     &:hover {
         transform:
             perspective(800px)
-        
-            translateY(0)
-            scale(1);
+            translateY(0);
         opacity: 1;
     }
 
@@ -112,11 +124,25 @@
     font-family: Alexandria;
     font-weight: lighter;
     color: black;
-    font-size: 24px;
+    font-size: 20px;
     letter-spacing: 2px;
     text-align: left;
   }
+
+  .form-marks {
+    font-family: 'LEMON MILK';
+    font-size: .8rem;
+    color: black;
+  }
   
+  .mark-holder {
+    padding-top: 15px;
+  }
+
+  .marker-icon {
+    padding-right: 10px;
+  }
+
   .floater {
     transform: 
         perspective(800px) 
@@ -140,7 +166,6 @@
   }
 
   .contact-label {
-    animation: slide-up 2s;
     font-family: 'LEMON MILK';
     font-size: .8rem;
     color: black;
